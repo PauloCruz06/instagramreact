@@ -1,0 +1,443 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e5e5;
+  }
+  
+  p {
+    font-family: "Roboto";
+  }
+  
+  ion-icon {
+    font-size: 21px;
+  }
+  
+  /* Barra do topo */
+  .top {
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: solid;
+    border-color: #dbdbdb;
+    border-bottom: 1px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+  }
+  
+  .top .desktop {
+    width: 935px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .top .mobile {
+    display: none;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: space-between;
+  }
+  
+  .logo > div {
+    padding-right: 10px;
+  }
+  
+  .logo .border {
+    width: 1px;
+    height: 22px;
+    border-left: 1px;
+    border-style: solid;
+    border-color: #dbdbdb;
+  }
+  
+  .browser {
+    width: 215px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #979797;
+  }
+  
+  .four-icons {
+    width: auto;
+    height: auto;
+  }
+  
+  .four-icons ion-icon {
+    margin-left: 23px;
+  }
+  
+  /* Local dos posts, stories e sidebar */
+  .conteiner {
+    width: 935px;
+    height: auto;
+    padding-top: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .feed {
+    width: 614px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /*stories*/
+  .stories {
+    width: 100%;
+    height: 118px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  
+  .stories ion-icon {
+    font-size: 30px;
+    filter: drop-shadow(-2px 2px 3px #dbdbdb);
+    position: absolute;
+    right: 8px;
+    bottom: 46px;
+    z-index: 1;
+  }
+  
+  .story {
+    width: 66px;
+    height: 100%;
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .img-back {
+    margin-top: 18px;
+  }
+  
+  .img-front {
+    position: absolute;
+    top: 23px;
+    left: 5px;
+  }
+  
+  .story p {
+    margin-top: 5px;
+  }
+  
+  /* posts */
+  .post {
+    width: 100%;
+    height: 749px;
+    margin-bottom: 60px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-top {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .post-top img {
+    margin-left: 17px;
+  }
+  
+  .post-top p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    margin-left: 12px;
+  }
+  
+  .post-top ion-icon {
+    margin-left: 450px;
+  }
+  
+  .post-bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .icons {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .icons ion-icon {
+    margin-left: 12px;
+  }
+  
+  .icons ion-icon:last-child {
+    margin-left: 460px;
+  }
+  
+  .likes {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .likes img {
+    margin-left: 12px;
+    margin-right: 8px;
+  }
+  
+  .likes p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    margin-right: 4px;
+  }
+  
+  .likes strong {
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    margin-right: 4px;
+  }
+  
+  /*sidebar*/
+  .sidebar {
+    background: none;
+    width: 293px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 23px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #c7c7c7;
+    position: sticky;
+    top: 88px;
+  }
+  
+  .main {
+    width: 185px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .main p:nth-child(2) {
+    font-weight: 500;
+    font-size: 14px;
+    color: #262626;
+  }
+  
+  .main p:nth-child(3) {
+    font-weight: 300;
+    font-size: 14px;
+    color: #8e8e8e;
+  }
+  
+  .suggestion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .suggestion p:first-child {
+    color: #8e8e8e;
+  }
+  
+  .suggestion p:last-child {
+    color: #262626;
+  }
+  
+  .follows {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+    position: relative;
+  }
+  
+  .gramname {
+    font-weight: 500;
+    font-size: 14px;
+    color: #262626;
+    position: absolute;
+    left: 43px;
+    top: 0px;
+  }
+  
+  .gramstatus {
+    font-weight: 400;
+    font-size: 12px;
+    color: #8e8e8e;
+    position: absolute;
+    left: 43px;
+    bottom: 0px;
+  }
+  
+  .follow {
+    font-weight: 500;
+    font-size: 12px;
+    color: #139ef2;
+    position: absolute;
+    top: 11px;
+    right: 0px;
+  }
+  
+  .sidebar > p {
+    margin-top: 22px;
+  }
+  
+  /* barra inferior*/
+  .bottom-mobile {
+    display: none;
+  }
+  
+  /* layout responsivo */
+  @media (max-width: 935px) {
+    .conteiner {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .top .desktop {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  }
+  
+  /* layout para mobile */
+  @media (max-width: 614px) {
+    .top .desktop {
+      display: none;
+    }
+  
+    .top .mobile {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .conteiner {
+      padding-top: 55px;
+    }
+  
+    .feed {
+      width: 100%;
+    }
+  
+    .icons ion-icon:last-child {
+      margin-left: 65%;
+    }
+  
+    .stories {
+      background: none;
+      border-radius: 0%;
+      border-left: none;
+      border-right: none;
+      margin-bottom: -1px;
+    }
+  
+    .stories ion-icon {
+      display: none;
+    }
+  
+    .bottom-mobile {
+      width: 100%;
+      height: 54px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dbdbdb;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+  
+  ion-icon:hover {
+    cursor: pointer;
+  }
+  
+  img:hover {
+    cursor: pointer;
+  }
+  
+  .browser:hover {
+    cursor: text;
+  }
+  
+  .browser p:hover {
+    display: none;
+  }
+  
+  .suggestion p:last-child:hover {
+    cursor: pointer;
+  }
+  
+  .follow {
+    cursor: pointer;
+  }
+  
