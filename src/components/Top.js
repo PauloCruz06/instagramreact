@@ -1,9 +1,11 @@
+import IonIcon from "./IonIcon";
+
 export default function Top() {
     return(
         <div class="top">
         <div class="desktop">
           <div class="logo">
-            <div><ion-icon name="logo-instagram"></ion-icon></div>
+            <div><IonIcon name="logo-instagram" /></div>
             <div class="border"></div>
             <img src="/images/logo.png" />
           </div>
@@ -11,17 +13,18 @@ export default function Top() {
             <p>Pesquisar</p>
           </div>
           <div class="four-icons">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-            <ion-icon name="compass-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
+            <IonIcon name="paper-plane-outline" />
+            <IonIcon name="compass-outline" />
+            <IonIcon name="heart-outline" />
+            <IonIcon name="person-outline" />
           </div>
         </div>
         <div class="mobile">
-          <ion-icon name="logo-instagram"></ion-icon>
-          <img src="/images/logo.png" />
-          <ion-icon name="paper-plane-outline"></ion-icon>
+            <IonIcon name="logo-instagram" />
+            <img src="/images/logo.png" />
+            <IonIcon name="paper-plane-outline" />
         </div>
       </div>
     );
 }
+
