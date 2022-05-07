@@ -120,6 +120,7 @@ body {
   
   .stories ion-icon {
     font-size: 30px;
+    color: #ffffff;
     filter: drop-shadow(-2px 2px 3px #dbdbdb);
     position: absolute;
     right: 8px;
@@ -141,10 +142,16 @@ body {
   }
   
   .img-back {
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
     margin-top: 18px;
   }
   
   .img-front {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
     position: absolute;
     top: 23px;
     left: 5px;
@@ -176,6 +183,9 @@ body {
   }
   
   .post-top img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
     margin-left: 17px;
   }
   
@@ -188,6 +198,12 @@ body {
   
   .post-top ion-icon {
     margin-left: 450px;
+  }
+
+  .img-main{
+    width: 100%;
+    height: 612px;
+    object-fit: cover;
   }
   
   .post-bottom {
@@ -221,6 +237,9 @@ body {
   }
   
   .likes img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
     margin-left: 12px;
     margin-right: 8px;
   }
