@@ -6,7 +6,7 @@ import Bottom from "./components/Bottom";
 
 function App(){
     return (
-        <div>
+        <div class="root">
             <Top />
             <Conteiner />
             <Bottom />
