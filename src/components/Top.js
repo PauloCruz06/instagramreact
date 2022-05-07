@@ -1,4 +1,5 @@
 import IonIcon from "./IonIcon";
+import Image from "./Image";
 
 export default function Top() {
     return(
@@ -7,7 +8,7 @@ export default function Top() {
           <div class="logo">
             <div><IonIcon name="logo-instagram" /></div>
             <div class="border"></div>
-            <img src="/images/logo.png" />
+            <Image url="/images/logo.png" alt="Logo Instagram" />
           </div>
           <div class="browser">
             <p>Pesquisar</p>
@@ -21,7 +22,7 @@ export default function Top() {
         </div>
         <div class="mobile">
             <IonIcon name="logo-instagram" />
-            <img src="/images/logo.png" />
+            <Image url="/images/logo.png" alt="Logo Instagram" />
             <IonIcon name="paper-plane-outline" />
         </div>
       </div>
