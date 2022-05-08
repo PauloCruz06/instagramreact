@@ -1,9 +1,32 @@
+import React from "react";
+
 import Image from "./Image";
 import IonIcon from "./IonIcon";
 
 export default function Post(props){
+    const VALOR_INICIAL =  "heart-outline";
+    const [heart, setHeart] = React.useState(VALOR_INICIAL);
+    const [id, setId] = React.useState(VALOR_INICIAL);
+
+    function heartShape(){
+        if(heart === "heart-outline"){
+            setHeart("heart");
+            setId("heart");
+        }
+    }
+
+    function heartShape2(){
+        if(heart === "heart-outline"){
+            setHeart("heart");
+            setId("heart");
+        }else if(heart === "heart"){
+            setHeart("heart-outline");
+            setId("heart-outline")
+        }
+    }
+    
     return(
-        <div class="post">
+        <div class="post" onClick={heartShape} >
             <div class="post-top">
                 <Image url={props.userImage}/>
                 <p>{props.postName}</p>
@@ -12,7 +35,7 @@ export default function Post(props){
             <Image type="img-main" url={props.postImage} />
             <div class="post-bottom">
                 <div class="icons">
-                    <IonIcon name="heart-outline" />
+                    <IonIcon id={id} name={heart} click={heartShape2}/>
                     <IonIcon name="chatbubble-outline" />
                     <IonIcon name="paper-plane-outline" />
                     <IonIcon name="bookmark-outline" />
