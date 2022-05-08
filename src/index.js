@@ -14,4 +14,4 @@ function App(){
     );
 }
 
-ReactDOM.render(<App />, document.querySelector("body"));
+ReactDOM.render(<App />, document.querySelector("body")); //*/
